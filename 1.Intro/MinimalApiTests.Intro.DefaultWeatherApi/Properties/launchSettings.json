@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "MinimalApiTests.Intro.DefaultWeatherApi": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7139;http://localhost:5139",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
