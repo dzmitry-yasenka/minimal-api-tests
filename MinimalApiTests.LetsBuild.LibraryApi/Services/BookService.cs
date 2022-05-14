@@ -21,7 +21,7 @@ public class BookService : IBookService
             return false;
         }
 
-        var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
         var result = await connection.ExecuteAsync(
             @"INSERT INTO Books (Isbn, Title, Author, ShortDescription, PageCount, ReleaseDate) 
                                 VALUES (@Isbn, @Title, @Author, @ShortDescription, @PageCount, @ReleaseDate)", book);
@@ -29,28 +29,53 @@ public class BookService : IBookService
         return result > 0;
     }
 
-    public Task<Book?> GetByIsbnAsync(string isbn)
+    public async Task<Book?> GetByIsbnAsync(string isbn)
     {
-        return Task.FromResult<Book?>(null);
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        return connection.QuerySingleOrDefault<Book>(
+            "SELECT * FROM Books WHERE Isbn = @Isbn LIMIT 1", 
+            new {Isbn = isbn});
     }
 
-    public Task<IEnumerable<Book>> GetAllAsync()
+    public async Task<IEnumerable<Book>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        return await connection.QueryAsync<Book>("SELECT * FROM Books");
     }
 
-    public Task<IEnumerable<Book>> SearchByTitleAsync(string searchTerm)
+    public async Task<IEnumerable<Book>> SearchByTitleAsync(string searchTerm)
     {
-        throw new NotImplementedException();
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        return await connection.QueryAsync<Book>(
+            @"SELECT * FROM Books WHERE Title LIKE '%' || @SearchTerm || '%'", 
+            new {SearchTerm = searchTerm});
     }
 
-    public Task<bool> UpdateAsync(Book book)
+    public async Task<bool> UpdateAsync(Book book)
     {
-        throw new NotImplementedException();
+        var existingBook = await GetByIsbnAsync(book.Isbn);
+
+        if (existingBook is null)
+        {
+            return false;
+        }
+        
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        var result = await connection.ExecuteAsync(
+            @"UPDATE Books SET 
+                 Title = @Title,
+                 Author = @Author,
+                 ShortDescription = @ShortDescription,
+                 PageCount = @PageCount,
+                 ReleaseDate = @ReleaseDate 
+             WHERE Isbn = @Isbn", book);
+        return result > 0;
     }
 
-    public Task<bool> DeleteAsync(string isbn)
+    public async Task<bool> DeleteAsync(string isbn)
     {
-        throw new NotImplementedException();
+        using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+        var result = await connection.ExecuteAsync("DELETE FROM Books WHERE Isbn = @Isbn", new {Isbn = isbn});
+        return result > 0;
     }
 }
