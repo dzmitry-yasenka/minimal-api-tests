@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.Intro.Defau
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.Intro.DefaultWeatherApi", "1.Intro\MinimalApiTests.Intro.DefaultWeatherApi\MinimalApiTests.Intro.DefaultWeatherApi.csproj", "{60472A69-A71A-4835-898F-650F5CF3C0DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.GettingStarted", "2.GettingStarted", "{B77F6B65-4628-456B-A25A-D1A027A528AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.GettingStarted.MinimalApi", "2.GettingStarted\MinimalApiTests.GettingStarted.MinimalApi\MinimalApiTests.GettingStarted.MinimalApi.csproj", "{0D62A498-5683-42E1-BACD-AFE7B614FEF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,7 @@ Global
 		{85F5DF5A-0A99-4BED-97B8-1377F410157E} = {852E436F-9D29-4268-8787-1CF6EF9669F2}
 		{4097BC27-84BF-467A-A682-59EFF786A2B7} = {852E436F-9D29-4268-8787-1CF6EF9669F2}
 		{60472A69-A71A-4835-898F-650F5CF3C0DC} = {852E436F-9D29-4268-8787-1CF6EF9669F2}
+		{0D62A498-5683-42E1-BACD-AFE7B614FEF1} = {B77F6B65-4628-456B-A25A-D1A027A528AE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{85F5DF5A-0A99-4BED-97B8-1377F410157E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -37,5 +42,9 @@ Global
 		{60472A69-A71A-4835-898F-650F5CF3C0DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60472A69-A71A-4835-898F-650F5CF3C0DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60472A69-A71A-4835-898F-650F5CF3C0DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D62A498-5683-42E1-BACD-AFE7B614FEF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D62A498-5683-42E1-BACD-AFE7B614FEF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D62A498-5683-42E1-BACD-AFE7B614FEF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D62A498-5683-42E1-BACD-AFE7B614FEF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
