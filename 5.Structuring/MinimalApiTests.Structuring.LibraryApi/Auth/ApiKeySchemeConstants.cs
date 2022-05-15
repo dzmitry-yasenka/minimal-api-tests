@@ -1,4 +1,4 @@
-﻿namespace MinimalApiTests.Extending.LibraryApi.Auth;
+﻿namespace MinimalApiTests.Structuring.LibraryApi.Auth;
 
 public static class ApiKeySchemeConstants
 {
