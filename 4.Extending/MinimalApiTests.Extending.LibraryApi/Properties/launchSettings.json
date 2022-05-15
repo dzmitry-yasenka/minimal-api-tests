@@ -1,10 +1,10 @@
 ﻿{
   "profiles": {
-    "MinimalApiTests.LetsBuild.LibraryApi": {
+    "MinimalApiTests.Extending.LibraryApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:7108;http://localhost:5108",
+      "applicationUrl": "https://localhost:7110;http://localhost:5110",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
