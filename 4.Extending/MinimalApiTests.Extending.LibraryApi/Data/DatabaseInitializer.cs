@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace MinimalApiTests.LetsBuild.LibraryApi.Data;
+namespace MinimalApiTests.Extending.LibraryApi.Data;
 
 public class DatabaseInitializer
 {
