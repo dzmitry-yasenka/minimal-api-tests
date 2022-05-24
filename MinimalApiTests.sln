@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8A577226
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.Testing.LibraryApi.Tests.Integration", "6.Testing\tests\MinimalApiTests.Testing.LibraryApi.Tests.Integration\MinimalApiTests.Testing.LibraryApi.Tests.Integration.csproj", "{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Filtering", "7.Filtering", "{4C9AB6DD-CBEF-49C3-8AEA-5D5AC81CBB1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.Filtering.LibraryApi", "7.Filtering\MinimalApiTests.Filtering.LibraryApi\MinimalApiTests.Filtering.LibraryApi.csproj", "{9934620C-C1AE-4D0E-A329-C683FCD55EA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,7 @@ Global
 		{C596D8C3-6A6C-47CB-A041-BA220A098AA4} = {6B0D2F41-1590-4115-BA2A-66917CF59FFB}
 		{8A577226-659E-44CF-8DCF-EB0BF91ECBDF} = {7C2755B0-8215-499D-B373-684215BA7BC1}
 		{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D} = {8A577226-659E-44CF-8DCF-EB0BF91ECBDF}
+		{9934620C-C1AE-4D0E-A329-C683FCD55EA2} = {4C9AB6DD-CBEF-49C3-8AEA-5D5AC81CBB1F}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{85F5DF5A-0A99-4BED-97B8-1377F410157E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -95,5 +100,9 @@ Global
 		{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
