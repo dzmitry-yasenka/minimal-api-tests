@@ -41,6 +41,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7.Filtering", "7.Filtering"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.Filtering.LibraryApi", "7.Filtering\MinimalApiTests.Filtering.LibraryApi\MinimalApiTests.Filtering.LibraryApi.csproj", "{9934620C-C1AE-4D0E-A329-C683FCD55EA2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8.FastEndpoints", "8.FastEndpoints", "{60649264-FDD3-4759-9E5C-91BB5236893B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalApiTests.FastEndpoints.Customers.Api", "8.FastEndpoints\MinimalApiTests.FastEndpoints.Customers.Api\MinimalApiTests.FastEndpoints.Customers.Api.csproj", "{1CC29E91-F72E-4215-87A8-06D6D178082D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +66,7 @@ Global
 		{8A577226-659E-44CF-8DCF-EB0BF91ECBDF} = {7C2755B0-8215-499D-B373-684215BA7BC1}
 		{5E4E3758-2AE1-4A39-B7C3-4FD4CAE0C06D} = {8A577226-659E-44CF-8DCF-EB0BF91ECBDF}
 		{9934620C-C1AE-4D0E-A329-C683FCD55EA2} = {4C9AB6DD-CBEF-49C3-8AEA-5D5AC81CBB1F}
+		{1CC29E91-F72E-4215-87A8-06D6D178082D} = {60649264-FDD3-4759-9E5C-91BB5236893B}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{85F5DF5A-0A99-4BED-97B8-1377F410157E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -104,5 +109,9 @@ Global
 		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9934620C-C1AE-4D0E-A329-C683FCD55EA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC29E91-F72E-4215-87A8-06D6D178082D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC29E91-F72E-4215-87A8-06D6D178082D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC29E91-F72E-4215-87A8-06D6D178082D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC29E91-F72E-4215-87A8-06D6D178082D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,37 @@
+﻿### Get all users
+GET https://localhost:5001/customers
+Accept: application/json
+
+### Get user by id
+GET https://localhost:5001/customers/
+Accept: application/json
+
+{
+"customerId": "edbe6d6d-a20e-475d-b43e-93df1616b28c"
+}
+
+### Create customer
+POST https://localhost:5001/customers
+Content-Type: application/json
+
+{
+  "username": "johndoe",
+  "fullName": "John Doe",
+  "email": "john@doe.com",
+  "dateOfBirth": "1993-04-20"
+}
+
+### Update customer
+PUT https://localhost:5001/customers/
+Content-Type: application/json
+
+{
+  "username": "john",
+  "fullName": "John Doe",
+  "email": "john@doe.com",
+  "dateOfBirth": "1993-04-20"
+}
+
+### Delete user
+DELETE https://localhost:5001/customers/
+Accept: application/json
